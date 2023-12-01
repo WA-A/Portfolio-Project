@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;700;800&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;700;800&family=Raleway:ital,wght@0,300;0,500;0,700;1,300&family=Roboto:wght@300&display=swap');
+
+:root{
+    --main-color: #ff724c;
+}
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+ max-width: 1140px !important;
+}
+.bg_main_color{
+background-color: var(--main-color);
+}
+.text_main_color{
+    color:var(--main-color);
+}
+.button i{
+transition: 0.5s;
+}
+.button i:hover{
+    transform: rotate(360deg);
+    color: white !important;
+    background-color:#333 !important;
+}
+.navbar .nav-item{
+    padding-block: 10px;
+    position: relative;
+}
+.navbar .nav-item::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--main-color);
+    transition: 0.5s;
+
+}
+.navbar .nav-item .active::after{
+    width: 100%;
+}
+.navbar .nav-item :hover::after{
+    width: 100%;
+}
+.header{
+    background-image: url(../img/367587999_605244438434456_8162229026754810421_n.jpg);
+    background-position-y: -50px;
+}
+.header .icons i{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.header .icons i:hover{
+    transform: rotate(360deg);
+}
+.header .icons i:nth-of-type(1){
+    color: #3b5999;
+    border-color: #3b5999;
+}
+.header .icons i:nth-of-type(1):hover{
+    background-color:#3b5999 ;
+    color: white;
+}
+.header .icons i:nth-of-type(2){
+    color: #ea4c89;
+    border-color: #ea4c89;
+}
+.header .icons i:nth-of-type(2):hover{
+    background-color:#ea4c89 ;
+    color: white;
+}
+.header .icons i:nth-of-type(3){
+    color: #1769ff;
+    border-color: #1769ff;
+}
+.header .icons i:nth-of-type(3):hover{
+    background-color:#1769ff;
+    color: white;
+}
+.header .icons i:nth-of-type(4){
+    color: #0077b5;
+    border-color: #0077b5;
+}
+.header .icons i:nth-of-type(4):hover{
+    background-color:#0077b5;
+    color: white;
+}
+.header .icons i:nth-of-type(5){
+    color: #dd4b39;
+    border-color: #dd4b39;
+}
+.header .icons i:nth-of-type(5):hover{
+    background-color:#dd4b39;
+    color: white;
+}
+.custum-btn:hover i{
+   color: var(--main-color) !important;
+}
+.border_main_color{
+    color: var(--main-color) !important;
+}
+.servers .servers_items{
+    position: relative;
+}
+.servers .servers_items::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    background-color: #f3f3f3;
+    z-index: -2;
+    height: 0;
+    transition: 0.5s;
+}
+.servers .servers_items:hover{
+height: 100%;
+}
+.PORTFOLIO{
+    background-color: #f3f3f3;
+}
+.PORTFOLIO .nav-link{
+color: rgb(95, 95, 95);
+border-color:rgb(95, 95, 95) !important;
+}
+.PORTFOLIO .nav-link.active{
+    background-color: var(--main-color);
+    color: white;
+    border: none !important;
+}
+.overlay{
+    background-color: rgba(95, 95,95, 2);
+    transform: scale(0);
+    transition: 0.5s;
+}
+.PORTFOLIO_card:hover .overlay{
+    background-color: rgba(95, 95,95, 2);
+    transform: scale(1);
+}
+.overlay i{
+    transform: scale(0);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.PORTFOLIO_card:hover .overlay i{
+    transform: scale(1) rotate(360deg);
+}
+.overlay i:hover{
+    border: 1px solid white;
+    background-color: transparent ;
+    color: var(--main-color) !important;
+}
+.PORTFOLIO_card .info{
+    bottom: 40px;
+    transition: 0.5s;
+    opacity: 0;
+}
+.PORTFOLIO_card .info:hover{
+    opacity: 1;
+    bottom: 0px;
+}
+.RESUME .head i{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: var(--main-color);
+}
+.RESUME .head{
+    position: relative;
+}
+.RESUME .head::before , .RESUME .items :not(:last-of-type)::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    color: #333;
+    top: 25px;
+    z-index: -1px;
+}
+.RESUME .items::after{
+content: "";
+position: absolute;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+border: 1px solid --main-color;
+top: 25px;
+left: 12px;
+background-color: white;
+}
+.RESUME .head:hover i{
+    background-color: #f3f3f3;
+    color: var(--main-color) !important;
+}
+.RESUME .items:hover::after{
+    background-color: var(--main-color) !important;
+}
+.item .bar .progress{
+    background-color: #333;
+ 
+}
+.item .bar .progress-bar{
+    color: var(--main-color);
+}
+.down{
+    background:linear-gradient(rgba(59,59,59,0.75), rgba(59,59,59,0.75))  ,url(../img/brandbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s;
+}
+.down a:hover{
+background-color: var(--main-color);
+border-color: var(--main-color) !important;
+}
+.content .quete:hover{
+    background-color: #333;
+    color: white;
+}
+.content .quete :hover span{
+    color: white;
+}
+.carousel-indicators{
+    bottom: -50px;
+}
+.carousel-indicators [data-bs-target]{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+   
+    border: 1px solid #ff724c;
+}
+.carousel-indicators .active{
+    background-color: var(--main-color) !important;
+}
+.contant{
+    background:linear-gradient(rgba(255,114,76,0.85), rgba(255,114,76,0.85))  ,url(../img/contactbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contant input:focus,.contant textarea:focus{
+    border: 1px solid white !important;
+    box-shadow: none;
+}
+.contant input::placeholder,.contant textarea::placeholder{
+  color: white !important;
+}
+.contant_info i{
+color: var(--main-color);
+width: 30px;
+height: 30px;
+border: 50%;
+background-color: #f3f3f3;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.4s;
+}
+.contant_info i:hover{
+    background-color: var(--main-color);
+    color: #f3f3f3;
+    transform: rotate(360deg);
+}
+.about .container .row .right{
+    background-color: var(--main-color) !important;
+}
+
