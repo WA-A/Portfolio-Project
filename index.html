@@ -14,10 +14,13 @@
     <link href="assest/css/indexstyl.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="Loading position-fixed vh-100 w-100 d-flex justify-content-center align-items-center z-3">
+  <!--<div class="Loading position-fixed vh-100 w-100 d-flex justify-content-center align-items-center z-3">
     <div class="spinner-border" role="status">
       <span class="visually-hidden">Loading...</span>
     </div>
+  </div>-->
+  <div class="scroll-to-top position-fixed text-white rounded-circle d-flex justify-content-center align-items-center "> <!--opacity-0 invisible-->
+    <i class="fa-solid fa-arrow-up"></i>
   </div>
     <nav class="navbar navbar-expand-lg fixed-top z-2">
         <div class="container">
@@ -30,19 +33,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#header">Home</a>
               </li>
               <li class="nav-item me-2">
-                <a class="nav-link" href="#">Servies</a>
+                <a class="nav-link" href="#Servies">Servies</a>
               </li>
               <li class="nav-item me-2">
-                <a class="nav-link" href="#">Portfoilo</a>
+                <a class="nav-link" href="#Portfoilo">Portfoilo</a>
               </li>
               <li class="nav-item me-2">
-                <a class="nav-link" href="#">Rusume</a>
+                <a class="nav-link" href="#Rusume">Rusume</a>
               </li>
               <li class="nav-item me-2">
-                <a class="nav-link" href="#">Contant</a>
+                <a class="nav-link" href="#Contant">Contant</a>
               </li>   
             </ul> 
             <a href="#" class="text-decoration-none bg_main_color text-white px-3 py-1 rounded-pill button"> 
@@ -52,7 +55,7 @@
           </div>
         </div>
       </nav>
-      <header class="header vh-100">
+      <header class="header vh-100 id='header">
         <div class="container">
 <div class="header_content d-flex flex-column justify-content-center vh-100 align-items-end">
   <span>Hello I’m</span>

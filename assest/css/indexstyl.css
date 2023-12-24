@@ -8,8 +8,23 @@
 
 
 body{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;}
+   /* overflow: hidden;
 }
+.Loading {
+    color: var(--main-color);
+    background-color: white;
+    transition: 0.5s opacity;
+}*/
+.scroll-to-top{
+    background-color: var(--main-color);
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
 .container{
  max-width: 1140px !important;
 }
