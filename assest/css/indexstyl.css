@@ -27,6 +27,14 @@ transition: 0.5s;
     color: white !important;
     background-color:#333 !important;
 }
+.scroll-to-top{
+    background-color: var(--main-color);
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
 .navbar .nav-item{
     padding-block: 10px;
     position: relative;
